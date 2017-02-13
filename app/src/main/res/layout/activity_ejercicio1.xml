@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dm2.ficheros.Ejercicio1"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Contenido a escribir:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnañadirint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR FICH INT."
+            android:onClick="añadirint"/>
+
+        <Button android:id="@+id/btnañadirext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR FICH EXT."
+            android:onClick="añadirext"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnleerint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER FICH. INT."
+            android:onClick="leerint"/>
+
+        <Button android:id="@+id/btnleerext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER FICH. EXT."
+            android:onClick="leerext"/>
+
+        <Button android:id="@+id/btnleerec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER RECURSO"
+            android:onClick="leerec"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnborrarint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRAR FICH INT."
+            android:onClick="borrarint"/>
+
+        <Button android:id="@+id/btnborrarext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRAR FICH EXT."
+            android:onClick="borrarext"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="El contenido del fichero es:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
